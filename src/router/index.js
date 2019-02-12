@@ -81,11 +81,11 @@ const UpdatePwd = (resolve => {
   })
 })
 
-const Intro = (resolve => {
-  import('pages/Intro/Intro').then(module => {
-    resolve(module)
-  })
-})
+// const Intro = (resolve => {
+//   import('pages/Intro/Intro').then(module => {
+//     resolve(module)
+//   })
+// })
 
 const Pay = (resolve => {
   import('pages/pay/pay').then(module => {
@@ -139,9 +139,6 @@ export default new Router({
           meta: {
             requireAuth: true
           }
-        }, {
-          path: '/mycenter/intro',
-          component: Intro
         }
       ]
     },
@@ -152,7 +149,7 @@ export default new Router({
       meta: {
         requireAuth: true
       }
-    }, 
+    },
     {
       path: '/login',  // 登录
       name: 'login',

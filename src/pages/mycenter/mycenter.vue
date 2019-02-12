@@ -22,10 +22,10 @@
         修改密码
         <i class='iconfont'>&#xe630;</i>
       </router-link>
-      <router-link class='info-item' tag='li' to='/mycenter/intro'>
+      <!-- <router-link class='info-item' tag='li' to='/mycenter/intro'>
         关于MMall
         <i class='iconfont'>&#xe630;</i>
-      </router-link>
+      </router-link> -->
     </ul>
     <trans-base>
       <div class='logout' v-if='username !== ""' @click='userLogout'>退出登录</div>
@@ -153,7 +153,7 @@ export default {
       border: 1px solid #ddd;
       text-align: center;
       transform: translateX(-50%);
-      background:#fff; 
+      background:#fff;
     }
   }
 </style>
