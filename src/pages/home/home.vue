@@ -127,10 +127,8 @@ export default {
       }
       if(newY > 0) {
         this.$refs.search.style.opacity = 1 / newY;
-        this.$refs.input.style.opacity = 1 / newY;
       } else {
         this.$refs.search.style.opacity = 1;
-        this.$refs.input.style.opacity = 1;
         this.$refs.search.style.backgroundColor = `rgba(239, 80, 80, ${-newY / REFRESH_SCROLL_HEIGHT})`;
       }
     }
