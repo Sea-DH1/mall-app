@@ -8,12 +8,12 @@
         <div class='head-top' ref='topSwithes' v-show='isShowTop'>
           <div class='icon-back' @click='back'>
             <i class='iconfont'>&#xe616;</i>
-          </div> 
+          </div>
           <ul class='switches'>
-            <li 
+            <li
               v-for='(item, index) in switches'
-              class='switches-item' 
-              @click='selectSwitchItem(index)' 
+              class='switches-item'
+              @click='selectSwitchItem(index)'
               :class='{active: curIndex === index}'
               :key='index'
             >
@@ -52,8 +52,8 @@
           </div>
           <div ref='detail' class='product-detail'>
             <img class='img-item' v-lazy="item" alt="" v-for='item in detailList' :key='item'>
-          </div> 
-        </div> 
+          </div>
+        </div>
       </scroll>
       <div class='add-cart'>
         <router-link tag='div' to='/shopcart' class='cart'>
@@ -85,7 +85,7 @@
       <confirm cancelBtn='返回' confirmBtn='查看' title='添加成功, 是否去购物车查看？' ref='toCartConfrim' @confirm='toCartLook' @cancel='backProductList'/>
     </div>
   </transi-base>
-  
+
 </template>
 
 <script>
