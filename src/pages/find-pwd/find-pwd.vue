@@ -72,7 +72,7 @@ export default {
     },
     goSecondStep() {  // 第一步
       if(this.username !== '') {
-        getQuestion({username: this.username}).then(res => {  
+        getQuestion({username: this.username}).then(res => {
           this.question = res.data;
           this.showFirstStep = false;
           this.showSecondStep = true;
@@ -142,8 +142,8 @@ export default {
   },
   computed: {
     inputStatus() {
-      if((this.showFirstStep && this.username !== '') || 
-        (this.showSecondStep && this.answer !== '') || 
+      if((this.showFirstStep && this.username !== '') ||
+        (this.showSecondStep && this.answer !== '') ||
         (this.showThirdStep && this.newPassword && this.newPassword.length >= 6)) {
         return 'opacity: 1';
       } else {
