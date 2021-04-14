@@ -6,6 +6,8 @@
 
 技术栈采用：vue全家桶+better-scroll滚动库，手写scss，没有使用ui框架
 
+[Demo](https://sea-dh1.github.io/mall-app/dist/index.html)
+
 ![Image text](https://github.com/lidonghai1/img/blob/master/home.jpg)
 ![Image text](https://github.com/lidonghai1/img/blob/master/order.jpg)
 ![Image text](https://github.com/lidonghai1/img/blob/master/shopcart.jpg)

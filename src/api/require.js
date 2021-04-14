@@ -2,7 +2,7 @@ import axios from 'axios';
 import qs from 'qs';
 
 export const require = axios.create({
-  baseURL: '',
+  baseURL: process.env.NODE_ENV === 'production' ? 'http://test.happymmall.com' : '',
   timeout: 60000
 });
 
